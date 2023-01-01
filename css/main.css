@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+    margin:0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+.main_principal{
+    height: 100vh;
+    min-height: 700px;
+    width: 100%; 
+    background: url(/imagenes/fondo-principal.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+#titulo{
+    display: inline;
+    margin-left: 6em;
+    font-family: 'Oswald';
+    font-size: 3.4em;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+
+}
+#titulo  h1{
+    color: white;
+    margin-top: 1.5em;
+}
+#esquinaDerecha{
+    display: inline-flex;
+    float: right;
+    gap: 4rem;
+    margin-top: 2.5rem;
+    margin-right: 6rem;
+    color: white;
+    font-size: 1.2rem;
+}
+#esquinaDerecha h3,a{
+    color:white;
+    text-decoration: none;
+}
+#seccion-principal p {
+    color:white;
+    width: 80%;
+    text-align: center;
+    margin:auto;
+    font-size:1.9rem;
+    background-color: none;
+}
+#seccion-principal{
+    background-color: transparent;
+}
+div #fondo-derecho{
+    float: right;
+    margin: 5px;
+}
+h2{
+    font-size: 2.5rem;
+    color:#f56720;
+    margin-top: 1.8em;
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+li{
+    color:white;
+    margin-top: 1em;
+    margin-left: 2em;
+    text-align: center;
+    list-style:none;
+    font-size: 1.4em;    
+}
+#conocimientos .aptitudes{
+    width: 50%;
+    align-items: center;
+    margin: auto;
+    margin-top: 0.8em;
+}
+.tech-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6em;
+}
+.tech{
+    height: 90px;
+    align-items: center;
+}
+div.contacto{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    color: none;
+    margin-left: 4rem;
+    margin-top: 3em;
+    gap: 3rem;
+    padding-top: 1em;   
+}
+div.contacto a{
+    align-items: center;
+    cursor: pointer;
+}
+#proyectos{
+    cursor: pointer;   
+}
+#proyectos :hover{
+    color:red;
+}
+#contact :hover{
+    color:red;
+}
+footer{
+    background-color:#f4f4f7;
+    height: 5em;
+}
+@media screen and (max-width: 1024px){
+    div.contacto{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        color: none;
+        margin-left: 4rem;
+        margin: 1em auto;
+        gap: 3rem;
+        padding-top: 1em;   
+    }
+    div h3 {
+        color:deeppink;
+    }
+    p.especial  {
+        color:deeppink;
+    }
+    div.contacto a{
+        height: 1.5em;
+    }
+    li{
+        color:white;
+        margin: 1em auto;
+        text-align: center;
+        list-style:none;
+        font-size: 1.4em;    
+    }
+   
+}
+
+@media screen and (max-width: 719px){
+    .main_principal{
+        /*height: 100vh;
+        min-height: 700px;
+        width: 100%; 
+        background: none;*/
+        flex: 0 0 50%;
+        max-width: 100%;
+    }
+    #conocimientos h2{
+        margin-top: 6em;
+    }
+    #titulo  h1{
+        color: white;
+        margin-top: 0.2em;
+    }
+    #esquinaDerecha{
+        display: inline-flex;
+        float: right;
+        gap: 4rem;
+        margin-top: 2rem auto;
+        color: white;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+}
